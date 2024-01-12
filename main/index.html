@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/c12878d3ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="inner">
+            <h1 id="logo">
+                <a href="./index.html"> </a>
+            </h1>
+            <nav id="gnb">
+                <ul>
+                    <li>
+                        <a href="../about/company.html">회사소개</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="../about/company.html">회사소개</a>
+                            </li>
+                            <li>
+                                <a href="../about/ceo.html">CEO 인사말</a>
+                            </li>
+                            <li>
+                                <a href="../about/certifie.html">인증서</a>
+                            </li>
+                            <li>
+                                <a href="../about/customer.html">고객사</a>
+                            </li>
+                            <li>
+                                <a href="../about/location.html">찾아오시는 길</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#;">제품정보</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#;">시스템</a>
+                            </li>
+                            <li>
+                                <a href="#;">컨트롤러</a>
+                            </li>
+                            <li>
+                                <a href="#;">디스펜싱 벨브</a>
+                            </li>
+                            <li>
+                                <a href="#;">압력 탱크</a>
+                            </li>
+                            <li>
+                                <a href="#;">압송 펌프</a>
+                            </li>
+                            <li>
+                                <a href="#;">정량 펌프</a>
+                            </li>
+                            <li>
+                                <a href="#;">기어 펌프 응용 장비</a>
+                            </li>
+                            <li>
+                                <a href="#;">로봇</a>
+                            </li>
+                            <li>
+                                <a href="#;">악세서리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#;">적용사례</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#;">Molding & Filling</a>
+                            </li>
+                            <li>
+                                <a href="#;">Conformal Coating</a>
+                            </li>
+                            <li>
+                                <a href="#;">Bonding</a>
+                            </li>
+                            <li>
+                                <a href="#;">Sealing</a>
+                            </li>
+                            <li>
+                                <a href="#;">Dotting</a>
+                            </li>
+                            <li>
+                                <a href="#;">Mixing&Compounding</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#;">고객지원</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#;">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#;">카탈로그</a>
+                            </li>
+
+                            <li>
+                                <a href="#;">언론 보도</a>
+                            </li>
+
+                            <li>
+                                <a href="#;">영상 자료</a>
+                            </li>
+
+                            <li>
+                                <a href="#;">온라인 기술 상담</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="util">
+                <li>
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 11C21 12.3133 20.7414 13.6137 20.2388 14.827C19.7362 16.0404 18.9996 17.1428 18.0709 18.0714C17.1423 19.0001 16.0399 19.7367 14.8265 20.2393C13.6132 20.7418 12.3128 21.0005 10.9995 21.0005C9.68624 21.0005 8.38581 20.7418 7.1725 20.2393C5.95918 19.7367 4.85673 19.0001 3.9281 18.0714C2.99947 17.1428 2.26284 16.0404 1.76027 14.827C1.25769 13.6137 0.999023 12.3133 0.999023 11C0.999023 8.34771 2.05264 5.80405 3.9281 3.92859C5.80356 2.05313 8.34723 0.999512 10.9995 0.999512C13.6518 0.999512 16.1955 2.05313 18.0709 3.92859C19.9464 5.80405 21 8.34771 21 11Z" stroke="#1F1F1F" stroke-width="1.5" />
+                        <path d="M15.0001 11C15.0001 12.313 14.8961 13.614 14.6951 14.827C14.4951 16.04 14.2001 17.142 13.8281 18.071C13.4571 19 13.0161 19.736 12.5311 20.239C12.0451 20.741 11.5251 21 11.0001 21C10.4751 21 9.95505 20.741 9.47005 20.239C8.98405 19.736 8.54305 18.999 8.17205 18.071C7.80005 17.142 7.50505 16.041 7.30405 14.827C7.09902 13.5617 6.99735 12.2818 7.00005 11C7.00005 9.687 7.10305 8.386 7.30405 7.173C7.50505 5.96 7.80005 4.858 8.17205 3.929C8.54305 3 8.98405 2.264 9.46905 1.761C9.95505 1.26 10.4751 1 11.0001 1C11.5251 1 12.0451 1.259 12.5301 1.761C13.0161 2.264 13.4571 3.001 13.8281 3.929C14.2001 4.858 14.4951 5.959 14.6951 7.173C14.8961 8.386 15.0001 9.687 15.0001 11Z" stroke="#1F1F1F" stroke-width="1.5" />
+                        <path d="M1 11H21" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+
+                    <ul class="lag">
+                        <li class="active">
+                            <a href="#;">KOR</a>
+                        </li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="#;">ENG</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menuicon">
+                    <input type="checkbox" id="menuicon">
+                    <label for="menuicon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </li>
+            </ul>
+            <div class="pop_gnb">
+                <ul>
+                    <li class="on">
+                        <a href="#;">회사소개
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="material-symbols:play-arrow">
+                                    <path id="Vector" d="M2.5 4L9.5 4L6 9.5L2.5 4Z" fill="#D9D9D9" />
+                                </g>
+                            </svg>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="../about/company.html">회사소개</a>
+                            </li>
+                            <li>
+                                <a href="../about/ceo.html">CEO 인사말</a>
+                            </li>
+                            <li>
+                                <a href="../about/certifie.html">인증서</a>
+                            </li>
+                            <li>
+                                <a href="../about/customer.html">고객사</a>
+                            </li>
+                            <li>
+                                <a href="../about/location.html">찾아오시는 길</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#;">제품정보
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="material-symbols:play-arrow">
+                                    <path id="Vector" d="M2.5 4L9.5 4L6 9.5L2.5 4Z" fill="#D9D9D9" />
+                                </g>
+                            </svg>
+
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#;">시스템</a>
+                            </li>
+                            <li>
+                                <a href="#;">컨트롤러</a>
+                            </li>
+                            <li>
+                                <a href="#;">디스펜싱 벨브</a>
+                            </li>
+                            <li>
+                                <a href="#;">압력 탱크</a>
+                            </li>
+                            <li>
+                                <a href="#;">압송 펌프</a>
+                            </li>
+                            <li>
+                                <a href="#;">정량 펌프</a>
+                            </li>
+                            <li>
+                                <a href="#;">기어 펌프 응용 장비</a>
+                            </li>
+                            <li>
+                                <a href="#;">로봇</a>
+                            </li>
+                            <li>
+                                <a href="#;">악세서리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#;">적용사례
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="material-symbols:play-arrow">
+                                    <path id="Vector" d="M2.5 4L9.5 4L6 9.5L2.5 4Z" fill="#D9D9D9" />
+                                </g>
+                            </svg>
+
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#;">Molding & Filling</a>
+                            </li>
+                            <li>
+                                <a href="#;">Conformal Coating</a>
+                            </li>
+                            <li>
+                                <a href="#;">Bonding</a>
+                            </li>
+                            <li>
+                                <a href="#;">Sealing</a>
+                            </li>
+                            <li>
+                                <a href="#;">Dotting</a>
+                            </li>
+                            <li>
+                                <a href="#;">Mixing&Compounding</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#;">고객지원
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="material-symbols:play-arrow">
+                                    <path id="Vector" d="M2.5 4L9.5 4L6 9.5L2.5 4Z" fill="#D9D9D9" />
+                                </g>
+                            </svg>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#;">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#;">카탈로그</a>
+                            </li>
+
+                            <li>
+                                <a href="#;">언론 보도</a>
+                            </li>
+
+                            <li>
+                                <a href="#;">영상 자료</a>
+                            </li>
+
+                            <li>
+                                <a href="#;">온라인 기술 상담</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="../image/logo_dark.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="main">
+            <div class="inner">
+                <p>Dispensing The World's<br>Leading Technology</p>
+                <span>20년 이상 촉적된 기술 KNOW-HOW와 차별화된 전용 생산 SYSTEM으로<br />액체 제어 기술을 선도하고 있습니다</span>
+            </div>
+        </section>
+        <section id="product">
+            <div class="inner">
+                <div class="title">
+                    제품정보
+                </div>
+                <div class="box">
+                    <article class="fe">
+                        <div class="title">
+                            지속적인 연구와 우수한 기술력으로<br />최고의 디스펜서 제품을 제공하고 있습니다.
+                        </div>
+                        <div class="img-box">
+                            <img src="../image/main/section02-02.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="title-box">
+                                <p>Controller</p>
+                                <span>Tubing Dispensing Controller BX-2</span>
+                            </div>
+                            <div class="btn">
+                                <img src="../image/button/arrow-up-light.svg" alt="">
+                            </div>
+                        </div>
+                    </article>
+                    <article class="fw">
+                        <ul class="tabs">
+                            <li class="on">시스템</li>
+                            <li>컨트롤러</li>
+                            <li>디스펜심 벨브</li>
+                            <li>압력 탱크</li>
+                            <li>압송 펌프</li>
+                            <li>정량 펌프</li>
+                            <li>기어 펌프 응용 장비</li>
+                            <li>로봇</li>
+                            <li>악세서리</li>
+                        </ul>
+                        <div class="swiper product_slide">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <img src="../image/main/section02-01.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <div class="inner">
+                <div class="title">
+                    <p>사업영역</p>
+                    <span>현재 국내에 3,300개의 업체를 비롯해 독일, 중국, 프랑스 등<br />세계 20여 개국에 장비를 공급하여 극로벌 경쟁력을 인정받고 있습니다</span>
+                </div>
+                <ul>
+                    <div class="line"></div>
+                    <li class="on">
+                        <div class="img-box">
+                            <img src="../image/main/1-car.svg" alt="">
+                        </div>
+                        <div class="dot"></div>
+                        <p class="name">자동차</p>
+                    </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="../image/main/2-semicon.svg" alt="">
+                        </div>
+                        <div class="dot"></div>
+                        <p class="name">반도체</p>
+                    </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="../image/main/3-mobile.svg" alt="">
+                        </div>
+                        <div class="dot"></div>
+                        <p class="name">모바일</p>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="../image/main/4-dispilay.svg" alt="">
+                        </div>
+                        <div class="dot"></div>
+                        <p class="name">디스플레이</p>
+                    </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="../image/main/5-food.svg" alt="">
+                        </div>
+                        <div class="dot"></div>
+                        <p class="name">식품/이미용</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="news">
+            <div class="inner">
+                <article class="info">
+                    <div class="title-box">
+                        <p>적용사례</p>
+                        <span>
+                            반석정밀공업의 노하우가 축적된<br />우수한 제조사례들을 만나보세요
+                        </span>
+                    </div>
+                    <div class="slide-btn">
+                        <div class="swiper-button-prev">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.73533 12.765C8.6651 12.6947 8.62566 12.5994 8.62566 12.5C8.62566 12.4006 8.6651 12.3053 8.73533 12.235L12.5947 8.37498L2.50033 8.37498C2.40087 8.37498 2.30549 8.33548 2.23517 8.26515C2.16484 8.19482 2.12533 8.09944 2.12533 7.99998C2.12533 7.90053 2.16484 7.80515 2.23517 7.73482C2.30549 7.66449 2.40087 7.62498 2.50033 7.62498L12.5947 7.62498L8.73533 3.76498C8.66909 3.6939 8.63303 3.59987 8.63474 3.50272C8.63646 3.40557 8.67581 3.31288 8.74452 3.24417C8.81323 3.17547 8.90592 3.13611 9.00307 3.1344C9.10022 3.13268 9.19424 3.16874 9.26533 3.23498L13.7653 7.73498C13.8356 7.8053 13.875 7.90061 13.875 7.99998C13.875 8.09936 13.8356 8.19467 13.7653 8.26498L9.26533 12.765C9.19502 12.8352 9.09971 12.8747 9.00033 12.8747C8.90095 12.8747 8.80564 12.8352 8.73533 12.765Z" fill="white" />
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next on">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.73533 12.765C8.6651 12.6947 8.62566 12.5994 8.62566 12.5C8.62566 12.4006 8.6651 12.3053 8.73533 12.235L12.5947 8.37498L2.50033 8.37498C2.40087 8.37498 2.30549 8.33548 2.23517 8.26515C2.16484 8.19482 2.12533 8.09944 2.12533 7.99998C2.12533 7.90053 2.16484 7.80515 2.23517 7.73482C2.30549 7.66449 2.40087 7.62498 2.50033 7.62498L12.5947 7.62498L8.73533 3.76498C8.66909 3.6939 8.63303 3.59987 8.63474 3.50272C8.63646 3.40557 8.67581 3.31288 8.74452 3.24417C8.81323 3.17547 8.90592 3.13611 9.00307 3.1344C9.10022 3.13268 9.19424 3.16874 9.26533 3.23498L13.7653 7.73498C13.8356 7.8053 13.875 7.90061 13.875 7.99998C13.875 8.09936 13.8356 8.19467 13.7653 8.26498L9.26533 12.765C9.19502 12.8352 9.09971 12.8747 9.00033 12.8747C8.90095 12.8747 8.80564 12.8352 8.73533 12.765Z" fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+                <article class="swiper news_slide">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="../image/main/section04-01.png" alt="">
+                            <span>Molding&Filling</span>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="../image/main/section04-02.png" alt="">
+                            <span>Conformal Coating</span>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="../image/main/section04-03.png" alt="">
+                            <span>Bonding</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="notice">
+            <div class="inner">
+                <article class="title-box">
+                    <div class="title">
+                        <p>고객지원</p>
+                        <span>반석정밀공업 제품에 대해 <br />궁금한 사항이 있다면 문의해주세요</span>
+                    </div>
+                    <a href="#;">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.73533 12.765C8.6651 12.6947 8.62566 12.5994 8.62566 12.5C8.62566 12.4006 8.6651 12.3053 8.73533 12.235L12.5947 8.37498L2.50033 8.37498C2.40087 8.37498 2.30549 8.33548 2.23517 8.26515C2.16484 8.19482 2.12533 8.09944 2.12533 7.99998C2.12533 7.90053 2.16484 7.80515 2.23517 7.73482C2.30549 7.66449 2.40087 7.62498 2.50033 7.62498L12.5947 7.62498L8.73533 3.76498C8.66909 3.6939 8.63303 3.59987 8.63474 3.50272C8.63646 3.40557 8.67581 3.31288 8.74452 3.24417C8.81323 3.17547 8.90592 3.13611 9.00307 3.1344C9.10022 3.13268 9.19424 3.16874 9.26533 3.23498L13.7653 7.73498C13.8356 7.8053 13.875 7.90061 13.875 7.99998C13.875 8.09936 13.8356 8.19467 13.7653 8.26498L9.26533 12.765C9.19502 12.8352 9.09971 12.8747 9.00033 12.8747C8.90095 12.8747 8.80564 12.8352 8.73533 12.765Z" fill="white" />
+                        </svg>
+                    </a>
+                </article>
+                <ul class="info-box">
+                    <li class="on">
+                        <div class="day">
+                            <p>24</p>
+                            <span>2023.06</span>
+                        </div>
+                        <a href="#;" class="text-box">
+                            <p>
+                                반석정밀공업의 노하우가 축적된 우수한 제조사례들을 만나보세요
+                            </p>
+                            <span>
+                                반석정밀공업의 노하우가 축적된 우수한 제조사례들을 만나보세요
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="day">
+                            <p>24</p>
+                            <span>2023.06</span>
+                        </div>
+                        <a href="#;" class="text-box">
+                            <p>
+                                반석정밀공업의 노하우가 축적된 우수한 제조사례들을 만나보세요
+                            </p>
+                            <span>
+                                반석정밀공업의 노하우가 축적된 우수한 제조사례들을 만나보세요
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="day">
+                            <p>24</p>
+                            <span>2023.06</span>
+                        </div>
+                        <a href="#;" class="text-box">
+                            <p>
+                                반석정밀공업의 노하우가 축적된 우수한 제조사례들을 만나보세요
+                            </p>
+                            <span>
+                                반석정밀공업의 노하우가 축적된 우수한 제조사례들을 만나보세요
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="inner">
+            <div class="info">
+                <div class="logo">
+                    <img src="../image/BanSeok_white.png" alt="">
+                </div>
+                <div class="for">
+                    <ul>
+                        <li><a href="#;">회사소개</a></li>
+                        <li><a href="#;">제품정보</a></li>
+                        <li><a href="#;">적용사례</a></li>
+                        <li><a href="#;">고객지원</a></li>
+                    </ul>
+                    <div class="address">
+                        <p>
+                            이승학 대표
+                        </p>
+                        <p>
+                            사업자등록번호 205-81-15769
+                        </p>
+                        <p>
+                            주소 서울시 성동구 왕십리로 58 서울숲 FORHU B101~104호
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="at" class="zzzz">
+                <p>
+                    Copyright 20231 by BANSEOK PRECISION IND., CO., LTD. All rights reserved
+                </p>
+                <ul>
+                    <li>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </li>
+                    <li><img src="../image/icon/facebook.svg" alt=""></li>
+                    <li><img src="../image/icon/twitter.svg" alt=""></li>
+                    <li><img src="../image/icon/youtube.svg" alt=""></li>
+                    <li><img src="../image/icon/blog.svg" alt=""></li>
+                    <li><img src="../image/icon/kakao.svg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/main.js"></script>
+
+
+</html>

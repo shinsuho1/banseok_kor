@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="sub about">
+        <div class="sub-visual">
+            <span class="sub-title">인증서</span>
+            <p class="title">회사소개</p>
+        </div>
+        <div class="contents certifie">
+            <div class="title">
+                <p>특허 및 인증서</p>
+                <span>전문화된 액체 제어 기술, 차별화된 전용 생산 System을<br />개발, 공급하고 있습니다</span>
+            </div>
+            <div class="inner">
+                <div class="info">
+                    <ul class="tab">
+                        <li class="on">인증서</li>
+                        <li>특허증</li>
+                        <li>상장</li>
+                    </ul>
+                    <ul class="list">
+                        <li class="on">
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="./image/certifie/section01-01.png" alt="">
+                                </div>
+                                <div class="title">인증서 제목 영역</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const certifie_tab = document.querySelectorAll(".certifie>.inner>.info>.tab>li");
+    const certifie_list = document.querySelectorAll(".certifie>.inner>.info>.list>li");
+
+    certifie_tab.forEach((el,index)=>{
+        el.addEventListener("click",()=>{
+            certifie_list.forEach((el)=>{el.classList.remove("on")});
+            certifie_tab.forEach((el)=>{el.classList.remove("on")});
+
+            certifie_tab[index].classList.add("on");
+            certifie_list[index].classList.add("on");
+        });
+    });
+    
+</script>
+
+</html>
