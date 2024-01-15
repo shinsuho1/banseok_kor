@@ -34,3 +34,8 @@ pop_gnb_li.forEach((el,index)=>{
     el.classList.add("on");
   });
 });
+
+
+window.addEventListener("load",()=>{
+  document.querySelector("#menuicon").checked = false;
+});
