@@ -1,7 +1,11 @@
 @import '../node_modules/swiper/swiper';
-@import 'reset';
-@import "main";
-@import "sub";
+@import './reset';
+
+@import "./main";
+@import "./sub";
+
+@import "./media";
+
 
 @font-face {
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');

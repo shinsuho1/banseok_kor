@@ -2,12 +2,15 @@ $(function(){
     const news_slide = new Swiper('.news_slide', {
       slidesPerView: 3,
       spaceBetween: 30,
-      loop: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       }
-    });    
+    });
+    const product_slide = new Swiper('.product_slide', {
+      slidesPerView: 1,
+      loop: true,
+    });
 })
 
 

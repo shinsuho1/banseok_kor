@@ -1,4 +1,7 @@
 main{
+    .inner{
+        max-width: 1300px;
+    }
     #main{
         width: 100%;
         height: 100vh;
@@ -7,10 +10,10 @@ main{
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
-        justify-content: centere;
+        justify-content: center;
         align-items: center;
         .inner{
-            width: 1400px;
+            width: 1300px;
             margin: 0 auto;
             color: #fff;
             display: flex;
@@ -31,7 +34,6 @@ main{
     #product{
         padding: 120px 0px;
         .inner{
-            width: 1400px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
@@ -85,12 +87,15 @@ main{
                 article.fw{
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
                     gap: 50px;
+                    max-width: 780px;
                     .tabs{
                         display: flex;
                         gap: 28px;
                         height: 56px;
                         align-items: center;
+                        flex-wrap: wrap;
                         li{
                             color: #999;
                             font-size: 16px;
@@ -138,6 +143,7 @@ main{
                     .product_slide{
                         width: 100%;
                         .swiper-wrapper{
+                            width: 100%;
                             .swiper-slide{
                                 img{
                                     width: 100%;
@@ -159,7 +165,7 @@ main{
         background-position: center;
         background-size: cover;
         .inner{
-            width: 1400px;
+            width: 1300px;
             margin: 0 auto;
             display: flex;  
             flex-direction: column;
@@ -244,18 +250,22 @@ main{
     #examples{
         width: 100%;
         padding: 120px 0;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        overflow: hidden;
         .inner{
-            // margin-left: 300px;
             display: flex;
-            justify-content: center;
-            gap: 150px;
+            text-wrap: nowrap;
+            margin: 0 auto;
             article.info{
                 display: flex;
                 flex-direction: column;
                 gap: 60px;
+                background-color: #fff;
+                position: relative;
+                padding-right: 150px;
+                z-index: 3;
                 .title-box{
                     color: #1f1f1f;
                     display: flex;
@@ -301,10 +311,13 @@ main{
                 }
             }
             article.news_slide{
+                width: 100%;
+                overflow: visible;
                 .swiper-wrapper{
                     width: calc(420px * 3);
+                    // width: 100%;
                     .swiper-slide{
-                        width: 420px;
+                        // width: 420px;
                         height: 448px;
                         // aspect-ratio: 15/16;
                         position: relative;
@@ -331,7 +344,7 @@ main{
         padding: 120px 0;
         background-color: #802320;
         .inner{
-            width: 1400px;
+            width: 1300px;
             margin: 0 auto;
             background-color: #fff;
             display: flex;
@@ -367,6 +380,7 @@ main{
             }
             .info-box{
                 padding: 50px 80px;
+                width: 750px;
                 li{
                     display: flex;
                     gap: 30px;
@@ -374,6 +388,7 @@ main{
                     align-items: center;
                     padding: 20px;
                     border-bottom: 1px solid #E5E5E5;
+                    text-wrap: nowrap;
                     .day{
                         display: flex;
                         justify-content: center;
