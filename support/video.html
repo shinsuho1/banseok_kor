@@ -1,20 +1,16 @@
-<!DOCTYPE html>
-<html lang="ko">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-
-<body>
+    <?php
+    include_once "../include/header.html";
+    $PAGE_CODE_1 = "04";
+    $PAGE_CODE_2 = "0404";
+    ?>
     <div class="sub support">
         <div class="sub-visual">
             <span class="sub-title">
                 영상자료
             </span>
             <p class="title">고객지원</p>
+            <?php include_once "../include/tabmenu.html"?>
         </div>
         <div class="contents video">
             <div class="title">
@@ -35,7 +31,7 @@
                     <div class="img-box">
                         <!-- 썸네일 -->
                         <!-- <img src="" alt=""> -->
-                        
+
                         <img src="../image/button/play-btn.svg" alt="play button" class="play-btn">
 
                     </div>
@@ -71,11 +67,6 @@
             </ul>
         </div>
     </div>
-</body>
-
-<script>
-</script>
-
-</html>
-
-
+    <?php
+    include_once "../include/footer.html";
+    ?>

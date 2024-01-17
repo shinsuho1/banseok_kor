@@ -1,20 +1,15 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-
-<body>
+ <?php
+    include_once "../include/header.html";
+    $PAGE_CODE_1 = "04";
+    $PAGE_CODE_2 = "0402";
+?>
     <div class="sub support">
         <div class="sub-visual">
             <span class="sub-title">
                 카랄로그
             </span>
             <p class="title">고객지원</p>
+            <?php include_once "../include/tabmenu.html"?>
         </div>
         <div class="contents catalogue">
             <div class="title">카탈로그</div>
@@ -229,20 +224,22 @@
             </div>
         </div>
     </div>
-</body>
+    <?php
+    include_once "../include/footer.html";
+    ?>
 
 <script>
     const catalogue_btn = document.querySelectorAll(".catalogue .inner .tab li");
     const catalogue_lists = document.querySelectorAll(".catalogue .inner ul.lists");
     catalogue_btn.forEach((el, index) => {
         el.addEventListener("click", () => {
-            catalogue_btn.forEach(el=>{el.classList.remove("on")})
-            catalogue_lists.forEach(el=>{el.classList.remove("on")})
+            catalogue_btn.forEach(el => {
+                el.classList.remove("on")
+            })
+            catalogue_lists.forEach(el => {
+                el.classList.remove("on")
+            })
             catalogue_btn[index].classList.add("on");
             catalogue_lists[index].classList.add("on");
         });
     });
-</script>
-
-
-</html>

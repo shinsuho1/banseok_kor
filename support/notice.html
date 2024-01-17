@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html lang="ko">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <?php
+    include_once "../include/header.html";
+    $PAGE_CODE_1 = "04";
+    $PAGE_CODE_2 = "0401";
 
-<body>
+    ?>
     <div class="sub support">
         <div class="sub-visual">
             <span class="sub-title">
                 공지사항
             </span>
             <p class="title">고객지원</p>
+            <?php include_once "../include/tabmenu.html"?>
         </div>
         <div class="contents notice">
             <div class="title">공지사항</div>
@@ -73,6 +70,7 @@
             </div>
         </div>
     </div>
-</body>
+    <?php
+    include_once "../include/footer.html";
+    ?>
 
-</html>

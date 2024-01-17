@@ -1,5 +1,6 @@
+const header = document.querySelector("#header");
 $("#header #gnb").hover(function(){
-    if($("header").hasClass("on") === true) return;
+  if($("header").hasClass("on") === true) return;
     $("#header").toggleClass("on");
   })
   
@@ -31,5 +32,10 @@ $("#header #gnb").hover(function(){
     }else{
       header.classList.remove("on");
     }
+  });
+
+  $(".tab-menu div span").on("click", function() {
+    $(this).toggleClass("active");
+    $(this).next("ul").stop().slideToggle("active");
   });
   

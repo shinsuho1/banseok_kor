@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="ko">
+    <?php
+    include_once "../include/header.html";
+    $PAGE_CODE_1 = "02";
+    $PAGE_CODE_2 = "0202";
+    ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-
-<body>
     <div class="sub product">
         <div class="sub-visual">
             <span class="sub-title">시스템</span>
             <p class="title">제품정보</p>
+            <?php include_once "../include/tabmenu.html" ?>
         </div>
         <div class="contents system">
             <div class="title">
@@ -79,6 +75,7 @@
             </div>
         </div>
     </div>
-</body>
 
-</html>
+    <?php
+    include_once "../include/footer.html";
+    ?>
