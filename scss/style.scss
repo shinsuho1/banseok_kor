@@ -1,12 +1,6 @@
 @import '../node_modules/swiper/swiper';
 @import './reset';
 
-@import "./main";
-@import "./sub";
-
-@import "./media";
-
-
 @font-face {
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 }
@@ -14,6 +8,8 @@
 body{
     font-family: 'Pretendard-Regular';
     font-style: normal;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .pagination{
@@ -39,11 +35,99 @@ body{
     }
 }
 
-
-
-
-
-
+.tab-menu{
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: calc(-65px / 2);
+    .inner{
+        width: 1300px;
+        display: flex;
+        background-color: #802320;
+        align-items: center;
+        .home_btn{
+            line-height: 28px;
+            width: 65px;
+            height: 65px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #6B1715;
+        }
+        div{
+            width: 260px;
+            position: relative;
+            span{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-right: 1px solid rgba($color: #fff, $alpha: 0.2);
+                padding: 0 20px;
+                cursor: pointer;
+                img{
+                    transition: .5s;
+                }
+                &.active{
+                    img{
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+            ul{
+                position: absolute;
+                width: 100%;
+                top: 43px;
+                left: 0;
+                background-color: #802320;
+                z-index: 10;
+                display: none;
+                flex-direction: column;
+                li{
+                    text-align: center;
+                    padding: 10px 20px;
+                    a{
+                        color: #fff;
+                    }
+                }
+                &.active{
+                    display: flex;
+                }
+            }
+        }
+        
+        .sub{
+            width: 260px;
+            ul{
+                display: none;
+                li{
+                    display: none;
+                    padding: 0 20px;
+                    line-height: 28px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    border-right: 1px solid rgba($color: #fff, $alpha: 0.2);
+                    justify-content: space-between;
+                    align-items: center;
+                    img{
+                        cursor: pointer;
+                    }
+                    a{
+                        color: #fff;
+                    }
+                    &.on{
+                        display: flex;
+                    }
+                }
+                &.on{
+                    display: block;
+                }
+            }
+        }
+    }
+}
 
 #header{
     position: fixed;
@@ -52,6 +136,8 @@ body{
     transition: 0.5s;
     padding: 0 50px;
     z-index: 10;
+    display: flex;
+    justify-content: flex-start;
     height: 120px;
     .inner{
         width: 100%;
@@ -110,31 +196,47 @@ body{
                         }
                     }
 
-                    //주석
-                    // &:hover{
-                    //     >a{
-                    //         color: #fff !important;
-                    //     }
-                    //     background-color: #802320;
-                    //     .sub-menu{
-                    //         background-color: #802320;
-                    //         li{
-                    //             a{
-                    //                 color: #fff;
-                    //             }
-                    //         }
-                    //     }
-                    // }
+                    &:hover{
+                        >a{
+                            color: #fff !important;
+                        }
+                        background-color: #802320;
+                        .sub-menu{
+                            background-color: #802320;
+                            li{
+                                a{
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
                 }
-                // &:hover{
-                //     > li {
-                //         padding: 0 70px;
-                //         .sub-menu{
-                //             opacity: 1; visibility: visible; pointer-events: auto;
-                //         }
+                &::before{
+                    content: "";
+                    display: block;
+                    position: fixed;
+                    width: 100vw;
+                    height: 5%;
+                    opacity: 0;
+                    transition: .3s;
+                    left: 0;
+                    top: 0;
+                    background-color: #fff;
+                    z-index: -1;
+                }
+                &:hover{
+                    > li {
+                        padding: 0 70px;
+                        .sub-menu{
+                            opacity: 1; visibility: visible; pointer-events: auto;
+                        }
 
-                //     }
-                // }
+                    }
+                    &::before{
+                        height: 34.2%;
+                        opacity: 1;
+                    }
+                }
             }
         }
         .util{
@@ -243,12 +345,14 @@ body{
             &.on{
                 li {
                     svg{
+                        display: block;
                         path{
                             transition: all 0.5s 0.3s;
                             stroke: #1f1f1f;
                         }
                     }
                     .lag {
+                        display: flex;
                         li {
                             &.active {
                                 a {
@@ -269,10 +373,10 @@ body{
             }
         }
         .pop_gnb{
-            width: 640px;
+            width: 25%;
             height: 100vh;
             padding: 0px 60px;
-            position: absolute;
+            position: fixed;
             top: 0;
             right: -100%;
             background-color: #fff;
@@ -388,6 +492,10 @@ body{
                     }
                 }
             }
+            &::before{
+                height: 34%;
+                opacity: 1;
+            }
         }
     }
 }
@@ -479,3 +587,10 @@ body{
         }
     }
 }
+
+
+
+@import "./main";
+@import "./sub";
+
+@import "./media";

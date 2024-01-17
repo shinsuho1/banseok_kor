@@ -1,6 +1,48 @@
-
+@media (max-width:1700px){
+    .sub{
+        &.about{
+            .ceo{
+                .inner{
+                    .title-box{
+                        p{
+                            font-size: 28px;
+                        }
+                        .box{
+                            span{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media (max-width:1400px) {
+    #header{
+        .inner{
+            #gnb{
+                display: none;
+            }
+        }
+    }
+    #footer{
+        .inner{
+            width: 100%;
+            margin: 0;
+            padding: 0 5%;
+        }
+    }
+
+    .tab-menu{
+        max-width: 1300px;
+        width: 100%;
+        // padding: 0 0%;
+        .inner{
+            width: 100%;
+        }
+    }
 
     main{
         #main{
@@ -13,26 +55,84 @@
             .inner{
                 justify-content: center;
                 align-items: center;
+                width: 100%;
+                padding: 0 20%;
                 .box{
+                    justify-content: center;
+                    align-items: center;
                     flex-direction: column;
+                    width: 100%;
                     article.fe{
                         justify-content: center;
                         align-items: center;
                         gap: 30px;
+                        width: 100%;
                         .title{
                             text-align: center;
+                            br{
+                                display: none;
+                            }
+                        }
+                        .img-box{
+                            width: 100%;
+                            aspect-ratio: 21/13;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
                         }
                         .info{
-                            width: 420px;
+                            width: 100%;
                         }
+                    }
+                    article.fw{
+                        width: 100%;
                     }
                 }
             }
         }
+        #work{
+            .inner{
+                width: 100%;
+                padding: 0 5%;
+                ul{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    li{
+                        width: 25%;
+                    }
+                }
+            }
+        }
+        #examples{
+            .inner{
+                width: 100%;
+                padding: 0 5%;
+            }
+        }
         #notice{
             .inner{
-                max-width: 1300px;
                 width: 100%;
+                padding: 0 5%;
+                flex-direction: column;
+                background-color: initial;
+                justify-content: center;
+                align-items: center;
+                .title-box{
+                    width: 80%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+                .info-box{
+                    width: 80%;
+                    background-color: #fff;
+                    li{
+                        text-wrap: wrap;
+                    }
+                }
             }
         }
     }
@@ -49,6 +149,7 @@
         }
 
         &.about{
+            
             .company{
                 .about{
                     width: 100%;
@@ -79,10 +180,42 @@
                         }
                     }
                 }
+                .history{
+                    width: 100%;
+                    padding: 0 5%;
+                    .inner{
+                        max-width: 1300px;
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
             }
 
             .ceo{
-                .greeting{
+                .inner{
+                    .img-box{
+                        width: 25%;
+                        p{
+                            padding: 15px 25px;
+                            font-size: 14px;
+                            // right: 1px;
+                        }
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .title-box{
+                        left: 10%;
+                        .box{
+                            span{
+                                br.br-none{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
@@ -232,19 +365,121 @@
         }
     }
 
+
 }
 
 @media (max-width:1200px) {
     #header{
         .inner{
-            #gnb{
-                display: none;
+            .pop_gnb{
+                width: 40%;
             }
         }
     }
+    #footer{
+        .inner{
+            .info{
+                gap: 20px;
+                .for{
+                    .address{
+                        flex-wrap: wrap;
+                        p{
+                            &:last-child{
+                                &::after{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        #notice{
+            .inner{
+                .title-box{
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+                .info-box{
+                    padding: 20px 30px;
 
+                }
+            }
+        }
+        #examples{
+            .inner{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 50px;
+                width: 100%;
+                padding: 0 5%;
+                .info{
+                    padding-right: 0;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    .title-box{
+                        width: 100%;
+                        span{
+                            br{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .news_slide{
+                    overflow: hidden;
+                    .swiper-wrapper{
+                        width: 100%;
+                        .swiper-slide{
+                            width: 100%;
+                            height: initial;
+                            aspect-ratio: 15/16;
+                        }
+                    }
+                }
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
     .sub{
         &.about{
+            .ceo{
+                .inner{
+                    width: 100%;
+                    padding: 0 5%;
+                    height: 100%;
+                    margin-top: 10%;
+                    .img-box{
+                        right: 15%;
+                        top: -20%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        p{
+                            text-wrap: nowrap;
+                            position: initial;
+                            margin-bottom: 20px;
+                            padding: 5% 8%;
+                        }
+                    }
+                    .title-box{
+                        position: relative;
+                        width: 100%;
+                        padding: 0;
+                        padding: 10% 10%;
+                        left: 0;
+                        top: 0;
+                    }
+                }
+            }
             .certifie{
                 .inner{
                     .info{
@@ -298,6 +533,28 @@
                     }
                     .info-box{
                         width: 100%;
+                        .info{
+                            .in{
+                                .head{
+                                    div{
+                                        width: 12%;
+                                        &:first-child{
+                                            width: 15%;
+                                        }
+                                    }
+                                }
+                                .body{
+                                    .td{
+                                        div{
+                                            width: 12%;
+                                            &:first-child{
+                                                width: 15%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -362,9 +619,50 @@
     }
 }
 
-@media (max-width:1023px){
+@media (max-width:1024px){
+    main{
+        #product{
+            .inner{
+                .box{
+                    article.fw{
+                        max-width: 500px;
+                        .tabs{
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+        #work{
+            .inner{
+                ul{
+                    li{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+        
+    }
     .sub{
         &.about{
+            .ceo{
+                .inner{
+                    margin-top: 40%;
+                    .img-box{
+                        width: 300px;
+                        top: -45%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    .title-box{
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+            }
             .company{
                 .about{
                     .inner{
@@ -374,10 +672,7 @@
                             align-items: flex-end;
                             padding: 5%;          
                             .text{
-                                position: relative;
-                                left: initial;
-                                bottom: initial;
-                                padding: 3% 6%;
+                                
                                 p{
                                     font-size: 24px;
                                     line-height: initial
@@ -497,6 +792,49 @@
         .inner{
             h1#logo{
                 width: 200px;
+                height: initial;
+                aspect-ratio: 244/41;
+            }
+            .pop_gnb{
+                width: 100%;
+            }
+            .util{
+                li{
+                    svg{
+                        display: none;
+                    }
+                    .lag{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    #footer{
+        .inner{
+            .info{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                .for{
+                    justify-content: center;
+                    align-items: center;
+                    ul{
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .address{
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    }
+                }
+            }
+            .at{
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
             }
         }
     }
@@ -515,11 +853,113 @@
                 }
             }
         }
+        #product{
+            .inner{
+                .box{
+                    
+                    article.fe{
+                        .info{
+                            .title-box{
+                                p{
+                                    font-size: 20px;
+                                }
+                                span{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    article.fw{
+                        .tabs{
+                            height: 100%;
+                        }
+                        .product_slide{
+                            .product_slide_number{
+                                padding: 10px 20px;
+                                div{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #work{
+            .inner{
+                ul{
+                    li{
+                        width: 45%;
+                    }
+                }
+            }
+        }
+        #examples{
+            .inner{
+                .info{
+                    .title-box{
+                        span{
+                            br{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #notice{
+            .inner{
+                .info-box{
+                    padding: 20px 30px;
+                    li{
+                        flex-direction: column;
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 
     .sub{
 
         &.about{
+            .ceo{
+                .inner{
+                    margin-top: 50%;
+                    .img-box{
+                        top: -320px;
+                    }
+                }
+            }
+            .company{
+                .about{
+                    .inner{
+                        .info{
+                            .text{
+                                position: absolute;
+                                left: initial;
+                                bottom: -30px;
+                                padding: 3% 6%;
+                                p{
+                                    font-size: 18px;
+                                }
+                                span{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .history{
+                    .inner{
+                        .title-box{
+                            .title{
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
             .location{
                 .inner{
                     .way{
@@ -572,9 +1012,21 @@
                             p{
                                 font-size: 22px;
                             }
-                            div{
+                            .in{
                                 span{
                                     font-size: 14px;
+                                }
+                                .head{
+                                    div{
+                                        font-size: 14px;
+                                    }
+                                }
+                                .body{
+                                    .td{
+                                        div{
+                                            font-size: 14px;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -666,6 +1118,13 @@
 }
 
 @media (max-width:540px){
+    #header{
+        .inner{
+            h1#logo{
+                width: 170px;
+            }
+        }
+    }
     main{
         #main{
             .inner{
@@ -677,8 +1136,49 @@
                 }
             }
         }
+        #product{
+            .inner{
+                .box{
+                    justify-content: center;
+                    align-items: center;
+                    article.fw{
+                        .product_slide{
+                            .product_slide_number{
+                                padding: 5px 10px;
+                                div{
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #notice{
+            .inner{
+                .info-box{
+                    li{
+                        .day{
+                            p{
+                                font-size: 38px;
+                            }
+                            span{
+                                font-size: 16px;
+                            }
+                        }
+                        .text-box{
+                            p{
+                                font-size: 16px;
+                            }
+                            span{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-
     .sub{
         .sub-visual{
             .sub-title{
@@ -690,7 +1190,29 @@
         }
 
         &.about{
+            .ceo{
+                .inner{
+                    margin-top: 60%;
+                    .img-box{
+                        top: -280px;
+                        width: 250px;
+                        p{
+                            padding: 3% 4%;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
             .company{
+                .about{
+                    .inner{
+                        .info{
+                            .text{
+                                // bottom: -60%;
+                            }
+                        }
+                    }
+                }
                 .outline{
                     .inner{
                         .info{
@@ -798,8 +1320,24 @@
                 }
             }
         }
+        #product{
+            .inner{
+                .box{
+                    article.fw{
+
+                    }
+                }
+            }
+        }
     }
     .sub{
+        &.about{
+            .ceo{
+                .inner{
+                    margin-top: 70%;
+                }
+            }
+        }
         &.support{
             .catalogue{
                 .inner{

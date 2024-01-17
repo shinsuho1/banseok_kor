@@ -13,29 +13,43 @@
         <div class="sub-visual">
             <span class="sub-title">회사소개</span>
             <p class="title">회사소개</p>
-        </div>
-        <!-- <div class="sub-menu">
-            <div class="inner">
-                <a href="../main/index.html">
-                    <img src="../image/icon/home.svg" alt="">
-                </a>
-                <div>
-                    <span>회사소개</span>
-                    <span>제품정보</span>
-                    <span>적용사례</span>
-                    <span>고객지원</span>
-                </div>
-                <div>
-                    <ul>
-                        <li>회사소개</li>
-                        <li>제품정보</li>
-                        <li>적용사례</li>
-                        <li>고객지원</li>
-
-                    </ul>
+            <div class="tab-menu">
+                <div class="inner">
+                    <a href="../main/index.html" class="home_btn">
+                        <img src="../image/icon/home.svg" alt="">
+                    </a>
+                    <div>
+                        <span>회사소개<img src="../image/button/ic_baseline-plus.svg" alt=""></span>
+                        <ul>
+                            <li><a href="../about/company.html">회사소개</a></li>
+                            <li><a href="../product/system.html">제품정보</a></li>
+                            <li><a href="../examples/example.html">적용사례</a></li>
+                            <li><a href="../support/notice.html">고객지원</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span>회사소개<img src="../image/button/ic_baseline-plus.svg" alt=""></span>
+                        <ul>
+                            <li>
+                                <a href="../about/company.html">회사소개</a>
+                            </li>
+                            <li>
+                                <a href="../about/ceo.html">CEO 인사말</a>
+                            </li>
+                            <li>
+                                <a href="../about/certifie.html">인증서</a>
+                            </li>
+                            <li>
+                                <a href="../about/customer.html">고객사</a>
+                            </li>
+                            <li>
+                                <a href="../about/location.html">찾아오시는 길</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div class="contents company">
             <div class="about">
                 <div class="title">
@@ -183,13 +197,28 @@
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"> -->
+<script src="../js/index.js"></script>
 <script>
     const history_slide = new Swiper('.history_slide', {
         slidesPerView: 3, //column count of shown slide
         navigation: {
             nextEl: ".history-btn.swiper-button-next",
             prevEl: ".history-btn.swiper-button-prev",
-        }
+        },
+        breakpoints: {
+        0:{
+          slidesPerView: 1,
+        },
+        540:{
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 2, 
+        },
+        1024: {
+          slidesPerView: 3, 
+        },
+      },
     });
 </script>
 
