@@ -1,219 +1,155 @@
 <div class="tab-menu">
-    <div class="inner">
-        <a href="../main/index.html" class="home_btn">
-            <img src="../image/icon/home.svg" alt="">
-        </a>
-        <div>
-            <span>
-                <?php if ($PAGE_CODE_1==" 01") {echo "회사소개" ;}?>
-                <?php if ($PAGE_CODE_1==" 02") {echo "제품정보" ;}?>
-                <?php if ($PAGE_CODE_1==" 03") {echo "적용사례" ;}?>
-                <?php if ($PAGE_CODE_1==" 04") {echo "고객지원" ;}?>
-                <img src="../image/button/ic_baseline-plus.svg" alt="">
-            </span>
-            <ul>
-                <li <?php if ($PAGE_CODE_1=="01") {echo "class='active'" ;}?>><a href="../about/company.html">회사소개</a></li>
-                <li <?php if ($PAGE_CODE_1=="02") {echo "class='active'" ;}?>><a href="../product/system.html">제품정보</a></li>
-                <li <?php if ($PAGE_CODE_1=="03") {echo "class='active'" ;}?>><a href="../examples/example.html">적용사례</a></li>
-                <li <?php if ($PAGE_CODE_1=="04") {echo "class='active'" ;}?>><a href="../support/notice.html">고객지원</a></li>
-            </ul>
-        </div>
-        <div>
-            <span>
-                <?php if ($PAGE_CODE_2=="0101") {echo "회사소개";}?>
-                <?php if ($PAGE_CODE_2=="0102") {echo "CEO 인사말";}?>
-                <?php if ($PAGE_CODE_2=="0103") {echo "인증서";}?>
-                <?php if ($PAGE_CODE_2=="0104") {echo "고객서";}?>
-                <?php if ($PAGE_CODE_2=="0105") {echo "찾아오시는 길";}?>
+<div class="inner">
+    <a href="../main/index.html" class="home_btn">
+        <img src="../image/icon/home.svg" alt="">
+    </a>
 
-                <?php if ($PAGE_CODE_2=="0201") {echo "시스템";}?>
-                <?php if ($PAGE_CODE_2=="0202") {echo "컨트롤러";}?>
-                <?php if ($PAGE_CODE_2=="0203") {echo "디스펜싱 벨브";}?>
-                <?php if ($PAGE_CODE_2=="0204") {echo "압력 탱크";}?>
-                <?php if ($PAGE_CODE_2=="0205") {echo "압송 펌프";}?>
-                <?php if ($PAGE_CODE_2=="0206") {echo "정량 펌프";}?>
-                <?php if ($PAGE_CODE_2=="0207") {echo "기어 펌프 응용 장비";}?>
-                <?php if ($PAGE_CODE_2=="0208") {echo "로봇";}?>
-                <?php if ($PAGE_CODE_2=="0209") {echo "악세서리";}?>
+    <div>
+        <span>
+            <?php if ($PAGE_CODE_1==" 01") {echo "회사소개" ;}?>
+            <?php if ($PAGE_CODE_1==" 02") {echo "제품정보" ;}?>
+            <?php if ($PAGE_CODE_1==" 03") {echo "적용사례" ;}?>
+            <?php if ($PAGE_CODE_1==" 04") {echo "고객지원" ;}?>
+            <img src="../image/button/ic_baseline-plus.svg" alt="">
+        </span>
+        <ul>
+            <li <?php if ($PAGE_CODE_1=="01") {echo "class='active'" ;}?>><a href="../about/company.html">회사소개</a></li>
+            <li <?php if ($PAGE_CODE_1=="02") {echo "class='active'" ;}?>><a href="../product/system.html">제품정보</a></li>
+            <li <?php if ($PAGE_CODE_1=="03") {echo "class='active'" ;}?>><a href="../examples/example.html">적용사례</a></li>
+            <li <?php if ($PAGE_CODE_1=="04") {echo "class='active'" ;}?>><a href="../support/notice.html">고객지원</a></li>
+        </ul>
+    </div>
 
-                <?php if ($PAGE_CODE_2=="0301") {echo "Molding & Filling";}?>
-                <?php if ($PAGE_CODE_2=="0302") {echo "Conformal Coating";}?>
-                <?php if ($PAGE_CODE_2=="0303") {echo "Bonding";}?>
-                <?php if ($PAGE_CODE_2=="0304") {echo "Sealing";}?>
-                <?php if ($PAGE_CODE_2=="0305") {echo "Dotting";}?>
-                <?php if ($PAGE_CODE_2=="0306") {echo "Mixing&Compounding";}?>
+    <div>
+        <span>
+            <?php if ($PAGE_CODE_2=="0101") {echo "회사소개";}?>
+            <?php if ($PAGE_CODE_2=="0102") {echo "CEO 인사말";}?>
+            <?php if ($PAGE_CODE_2=="0103") {echo "인증서";}?>
+            <?php if ($PAGE_CODE_2=="0104") {echo "고객서";}?>
+            <?php if ($PAGE_CODE_2=="0105") {echo "찾아오시는 길";}?>
 
-                <?php if ($PAGE_CODE_2=="0401") {echo "공지사항";}?>
-                <?php if ($PAGE_CODE_2=="0402") {echo "카탈로그";}?>
-                <?php if ($PAGE_CODE_2=="0403") {echo "언론 보도";}?>
-                <?php if ($PAGE_CODE_2=="0404") {echo "영상자료";}?>
-                <?php if ($PAGE_CODE_2=="0405") {echo "온라인 기술 상담";}?>
+            <?php if ($PAGE_CODE_2=="0201") {echo "시스템";}?>
+            <?php if ($PAGE_CODE_2=="0202") {echo "컨트롤러";}?>
+            <?php if ($PAGE_CODE_2=="0203") {echo "디스펜싱 벨브";}?>
+            <?php if ($PAGE_CODE_2=="0204") {echo "압력 탱크";}?>
+            <?php if ($PAGE_CODE_2=="0205") {echo "압송 펌프";}?>
+            <?php if ($PAGE_CODE_2=="0206") {echo "정량 펌프";}?>
+            <?php if ($PAGE_CODE_2=="0207") {echo "기어 펌프 응용 장비";}?>
+            <?php if ($PAGE_CODE_2=="0208") {echo "로봇";}?>
+            <?php if ($PAGE_CODE_2=="0209") {echo "악세서리";}?>
 
-                <img src="../image/button/ic_baseline-plus.svg" alt="">
-            </span>
-            
-            <ul>
-                <?php 
-                    if($PAGE_CODE_1=="01"){
-                ?>
-                    <li <?php if ($PAGE_CODE_2=="0101") {echo "class='active'" ;}?>>
-                        <a href="../about/company.html">회사소개</a>
-                    </li>
-                    <li <?php if ($PAGE_CODE_2=="0102") {echo "class='active'" ;}?>>
-                        <a href="../about/ceo.html">CEO 인사말</a>
-                    </li>
-                    <li <?php if ($PAGE_CODE_2=="0103") {echo "class='active'" ;}?>>
-                        <a href="../about/certifie.html">인증서</a>
-                    </li>
-                    <li <?php if ($PAGE_CODE_2=="0104") {echo "class='active'" ;}?>>
-                        <a href="../about/customer.html">고객서</a>
-                    </li>
-                    <li <?php if ($PAGE_CODE_2=="0105") {echo "class='active'" ;}?>>
-                        <a href="../about/location.html">찾아오시는길</a>
-                    </li>
-                <?php
-                } else if ($PAGE_CODE_1 == "02") {
-                ?>
-                    <li <?php if ($PAGE_CODE_2=="0201") {echo "class='active'" ;}?>>
-                    <a href="../product/products.html">제품별</a>
-                </li>
-                <li <?php if ($PAGE_CODE_2=="0202") {echo "class='active'" ;}?>>
-                    <a href="../product/industries.html">산업별</a>
-                </li>
-                    <li <?php if ($PAGE_CODE_2=="0206") {echo "class='active'" ;}?>>
-                        <a href="../about/location.html">정량 펌프</a>
-                    </li>
-                    <li <?php if ($PAGE_CODE_2=="0207") {echo "class='active'" ;}?>>
-                        <a href="../about/location.html">기어 펌프 응용 장비</a>
-                    </li>
-                    <li <?php if ($PAGE_CODE_2=="0208") {echo "class='active'" ;}?>>
-                        <a href="../about/location.html">로봇</a>
-                    </li>
-                    <li <?php if ($PAGE_CODE_2=="0209") {echo "class='active'" ;}?>>
-                        <a href="../about/location.html">악세서리</a>
-                    </li>
-                
-                <?php 
-                } else if ($PAGE_CODE_1 == "03"){
-                ?>
-                    <li <?php if ($PAGE_CODE_2=="0301") {echo "class='active'" ;}?>>
-                        <a href="../examples/example.html">Molding & Filling</a>
-                    </li>
-                    <li <?php if ($PAGE_CODE_2=="0302") {echo "class='active'" ;}?>>
-                        <a href="../examples/example.html">Conformal Coating</a>
-                    </li>
-                <?php
-                } else if ($PAGE_CODE_1 == "04"){
-                ?>
-                    <li <?php if ($PAGE_CODE_2=="0401") {echo "class='active'" ;}?>>
-                        <a href="../support/notice.html">공지사항</a>
-                    </li>
-                    <li <?php if ($PAGE_CODE_2=="0402") {echo "class='active'" ;}?>>
-                        <a href="../support/catalogue.html">카탈로그</a>
-                    </li>
-                    <li <?php if ($PAGE_CODE_2=="0403") {echo "class='active'" ;}?>>
-                        <a href="../support/news.html">언론 보도</a>
-                    </li>
-                    <li <?php if ($PAGE_CODE_2=="0404") {echo "class='active'" ;}?>>
-                        <a href="../support/video.html">영상자료</a>
-                    </li>
-                    <li <?php if ($PAGE_CODE_2=="0405") {echo "class='active'" ;}?>>
-                        <a href="../support/counsel.html">온라인 기술 상담</a>
-                    </li>
-                <?php }?>
-            </ul>
+            <?php if ($PAGE_CODE_2=="0301") {echo "Molding & Filling";}?>
+            <?php if ($PAGE_CODE_2=="0302") {echo "Conformal Coating";}?>
+            <?php if ($PAGE_CODE_2=="0303") {echo "Bonding";}?>
+            <?php if ($PAGE_CODE_2=="0304") {echo "Sealing";}?>
+            <?php if ($PAGE_CODE_2=="0305") {echo "Dotting";}?>
+            <?php if ($PAGE_CODE_2=="0306") {echo "Mixing&Compounding";}?>
 
+            <?php if ($PAGE_CODE_2=="0401") {echo "공지사항";}?>
+            <?php if ($PAGE_CODE_2=="0402") {echo "카탈로그";}?>
+            <?php if ($PAGE_CODE_2=="0403") {echo "언론 보도";}?>
+            <?php if ($PAGE_CODE_2=="0404") {echo "영상자료";}?>
+            <?php if ($PAGE_CODE_2=="0405") {echo "온라인 기술 상담";}?>
 
-            <!-- <ul>
-                <li>
+            <img src="../image/button/ic_baseline-plus.svg" alt="">
+        </span>
+        
+        <ul>
+            <?php 
+                if($PAGE_CODE_1=="01"){
+            ?>
+                <li <?php if ($PAGE_CODE_2=="0101") {echo "class='active'" ;}?>>
                     <a href="../about/company.html">회사소개</a>
                 </li>
-                <li>
+                <li <?php if ($PAGE_CODE_2=="0102") {echo "class='active'" ;}?>>
                     <a href="../about/ceo.html">CEO 인사말</a>
                 </li>
-                <li>
+                <li <?php if ($PAGE_CODE_2=="0103") {echo "class='active'" ;}?>>
                     <a href="../about/certifie.html">인증서</a>
                 </li>
-                <li>
-                    <a href="../about/customer.html">고객사</a>
+                <li <?php if ($PAGE_CODE_2=="0104") {echo "class='active'" ;}?>>
+                    <a href="../about/customer.html">고객서</a>
                 </li>
-                <li>
-                    <a href="../about/location.html">찾아오시는 길</a>
+                <li <?php if ($PAGE_CODE_2=="0105") {echo "class='active'" ;}?>>
+                    <a href="../about/location.html">찾아오시는길</a>
                 </li>
-            </ul>
-
-
-            <ul>
-                <li>
+            <?php
+            } else if ($PAGE_CODE_1 == "02") {
+            ?>
+                <li <?php if ($PAGE_CODE_2=="0201") {echo "class='active'" ;}?>>
                     <a href="../product/system.html">시스템</a>
                 </li>
-                <li>
-                    <a href="#;">컨트롤러</a>
+                <li <?php if ($PAGE_CODE_2=="0202") {echo "class='active'" ;}?>>
+                    <a href="../product/system.html">컨트롤러</a>
                 </li>
-                <li>
-                    <a href="#;">디스펜싱 벨브</a>
+                <li <?php if ($PAGE_CODE_2=="0203") {echo "class='active'" ;}?>>
+                    <a href="../product/system.html">디스펜싱 벨브</a>
                 </li>
-                <li>
-                    <a href="#;">압력 탱크</a>
+                <li <?php if ($PAGE_CODE_2=="0204") {echo "class='active'" ;}?>>
+                    <a href="../product/system.html">압력 탱크</a>
                 </li>
-                <li>
-                    <a href="#;">압송 펌프</a>
+                <li <?php if ($PAGE_CODE_2=="0205") {echo "class='active'" ;}?>>
+                    <a href="../product/system.html">압송 펌프</a>
                 </li>
-                <li>
-                    <a href="#;">정량 펌프</a>
+                <li <?php if ($PAGE_CODE_2=="0206") {echo "class='active'" ;}?>>
+                    <a href="../product/system.html">정량 펌프</a>
                 </li>
-                <li>
-                    <a href="#;">기어 펌프 응용 장비</a>
+                <li <?php if ($PAGE_CODE_2=="0207") {echo "class='active'" ;}?>>
+                    <a href="../product/system.html">기어 펌프 응용 장비</a>
                 </li>
-                <li>
-                    <a href="#;">로봇</a>
+                <li <?php if ($PAGE_CODE_2=="0208") {echo "class='active'" ;}?>>
+                    <a href="../product/system.html">로봇</a>
                 </li>
-                <li>
-                    <a href="#;">악세서리</a>
+                <li <?php if ($PAGE_CODE_2=="0209") {echo "class='active'" ;}?>>
+                    <a href="../product/system.html">악세서리</a>
                 </li>
-            </ul>
-
-            <ul>
-                <li>
+            
+            <?php 
+            } else if ($PAGE_CODE_1 == "03"){
+            ?>
+                <li <?php if ($PAGE_CODE_2=="0301") {echo "class='active'" ;}?>>
                     <a href="../examples/example.html">Molding & Filling</a>
                 </li>
-                <li>
-                    <a href="#;">Conformal Coating</a>
+                <li <?php if ($PAGE_CODE_2=="0302") {echo "class='active'" ;}?>>
+                    <a href="../examples/example.html">Conformal Coating</a>
                 </li>
-                <li>
-                    <a href="#;">Bonding</a>
+                <li <?php if ($PAGE_CODE_2=="0303") {echo "class='active'" ;}?>>
+                    <a href="../examples/example.html">Bonding</a>
                 </li>
-                <li>
-                    <a href="#;">Sealing</a>
+                <li <?php if ($PAGE_CODE_2=="0304") {echo "class='active'" ;}?>>
+                    <a href="../examples/example.html">Sealing</a>
                 </li>
-                <li>
-                    <a href="#;">Dotting</a>
+                <li <?php if ($PAGE_CODE_2=="0305") {echo "class='active'" ;}?>>
+                    <a href="../examples/example.html">Dotting</a>
                 </li>
-                <li>
-                    <a href="#;">Mixing&Compounding</a>
+                <li <?php if ($PAGE_CODE_2=="0306") {echo "class='active'" ;}?>>
+                    <a href="../examples/example.html">Mixing&Compounding</a>
                 </li>
-            </ul>
-
-            <ul>
-                <li>
+            <?php
+            } else if ($PAGE_CODE_1 == "04"){
+            ?>
+                <li <?php if ($PAGE_CODE_2=="0401") {echo "class='active'" ;}?>>
                     <a href="../support/notice.html">공지사항</a>
                 </li>
-                <li>
+                <li <?php if ($PAGE_CODE_2=="0402") {echo "class='active'" ;}?>>
                     <a href="../support/catalogue.html">카탈로그</a>
                 </li>
-
-                <li>
+                <li <?php if ($PAGE_CODE_2=="0403") {echo "class='active'" ;}?>>
                     <a href="../support/news.html">언론 보도</a>
                 </li>
-
-                <li>
-                    <a href="../support/video.html">영상 자료</a>
+                <li <?php if ($PAGE_CODE_2=="0404") {echo "class='active'" ;}?>>
+                    <a href="../support/video.html">영상자료</a>
                 </li>
-
-                <li>
+                <li <?php if ($PAGE_CODE_2=="0405") {echo "class='active'" ;}?>>
                     <a href="../support/counsel.html">온라인 기술 상담</a>
                 </li>
-            </ul> -->
-        </div>
+            <?php }?>
+        </ul>
     </div>
+
+    <div>
+        <span></span>
+    </div>
+    
+</div>
 </div>

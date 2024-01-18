@@ -93,6 +93,9 @@
             }
         }
         #work{
+            .line{
+                display: none;
+            }
             .inner{
                 width: 100%;
                 padding: 0 5%;
@@ -187,6 +190,11 @@
                         max-width: 1300px;
                         width: 100%;
                         margin: 0;
+                        .history_slide{
+                            .swiper-wrapper{
+                                height: 400px;
+                            }
+                        }
                     }
                 }
             }

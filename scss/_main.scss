@@ -194,6 +194,31 @@ main{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        position: relative;
+        .line-box{
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            .line{
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: #fff;
+                opacity: .2;
+            }
+            .line_bg{
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 10%;
+                height: 1px;
+                opacity: .5;
+                background-color: #fff;
+                
+            }
+        }
         .inner{
             width: 1300px;
             margin: 0 auto;
@@ -301,15 +326,18 @@ main{
                         justify-content: center;
                         align-items: center;
                         border: 1px solid #666;
+                        cursor: pointer;
+                        transition: .15s;
                         svg{
                             path{
                                 fill: #000;
+                                transition: .15s;
                             }
                         }
                         &:nth-of-type(1){
                             transform: rotate(180deg);
                         }
-                        &[tabindex="0"]{
+                        &:hover{
                             background-color: #802320;
                             border: none;
                             svg{
@@ -400,6 +428,7 @@ main{
                     justify-content: center;
                     align-items: center;
                     border: 1px solid #fff;
+                    cursor: pointer;
                 }
             }
             .info-box{
